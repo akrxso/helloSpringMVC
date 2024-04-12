@@ -20,10 +20,10 @@ public class HomeController {
     @GetMapping("/") //위 주석처리된부분과 같은 말이다.
     public String home(HttpServletRequest request) {
 
-        String url = request.getRequestURL().toString();
-        String clientIPaddr = request.getRemoteAddr();
-
-        logger.info("Request URL: {}, Client IP: {}", url, clientIPaddr);
+//        String url = request.getRequestURL().toString();
+//        String clientIPaddr = request.getRemoteAddr();
+//
+//        logger.info("Request URL: {}, Client IP: {}", url, clientIPaddr);
 
         return "home";
     }
